@@ -1,0 +1,132 @@
+/* font-family */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+
+/* reset for the document  */
+html{
+    box-sizing: border-box;
+    font-family: "Noto Sans Jp", sans-serif;
+    
+    
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin:0;
+    padding:0;
+}
+
+
+.container{
+    width: 95vw;
+    margin: 0 auto;
+   
+}
+
+
+/* header styles */
+
+/* nav styles  */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(56, 88, 182);
+}
+
+
+
+/* .brand-logo, .link-group, .search-form{
+    display: inline-block;
+} */
+
+
+
+.brand-logo{
+    width: 50px;
+    padding: 5px;
+}
+
+
+.brand-logo img{
+    width:100%;
+}
+
+/* nav_link main work  */
+.link-group{
+    height: 1.5rem;
+    width: 50vw;
+    display:flex;
+    align-items: center;
+    
+}
+
+
+
+.link-group li{
+    list-style-type: none;
+    display: inline-block;
+   
+}
+
+/* group in li element  */
+.link-text{
+    height: 24px;
+    text-decoration: none;
+    color: rgb(233, 227, 227);
+    margin: 1rem;
+    text-align:center;
+    display:flex;
+}
+
+/* icon and link text  */
+li a span.icon-group{
+    height:1.5rem;
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+    overflow:hidden;
+    
+   
+}
+
+/* icon reset  and animation */
+span.icon-group .fas{
+    display: block;
+    height:100%;
+    width: 100%;
+    line-height: 1.5rem;
+    transition: 0.5s;
+}
+
+.link-text:hover span.icon-group .fas{
+    transform: translateY(-100%);
+}
+
+
+
+/* search_bar work  */
+.search-form{
+    display:block;
+    background-color:rgb(233, 227, 227);
+    border-radius: .6rem;
+}
+
+
+input[type='text']#search{
+    background-color:rgb(233, 227, 227);
+    border:none;
+    padding: 0.3rem 0.8rem;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius:0.6rem;
+    outline: none;
+    margin-right:0;
+}
+
+label[for='search'] .fas{
+    /* background-color:rgb(233, 227, 227); */
+    margin-left:0;
+    padding-right: 5px;
+}
