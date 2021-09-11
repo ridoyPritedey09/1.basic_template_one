@@ -1,0 +1,68 @@
+/* nav-bar for the smaller screen */
+.smaller-screen-nav{
+    background-color:rgb(56, 88, 182);
+    padding:1rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* brand logo for smaller screen  */
+
+
+a.smaller-brand-logo{
+    width: 80px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+a.smaller-brand-logo>img{
+    width: 100%;
+}
+
+/* search-bar for smaller screen  */
+
+
+
+form.smaller-search-form{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    max-width: 70vw;
+    min-width: 40vw;
+    background-color: rgb(233, 227, 227);
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+input.smaller-search-bar{
+    
+    width: 90%;
+    outline: none;
+    padding: .4rem .5rem;
+    padding-right: .2rem;
+    border: none;
+    background-color:rgb(233, 227, 227);
+    border-radius:.5rem;
+}
+
+label.smaller-icon .fas{
+    margin-right: .5rem;
+}
+
+
+/* select-option navbar for smaller screen */
+
+select.smaller-nav-select{
+    width: 85vw;
+    padding: .4rem .3rem;
+    font-size: 1rem;
+}
+
+select.smaller-nav-select option{
+    background-color: gray;
+
+}

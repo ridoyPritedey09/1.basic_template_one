@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/eb855865d3.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>Template One</title>
 </head>
 
@@ -17,7 +17,10 @@
         <!-- header  -->
         <header>
             <!-- nav-bar  -->
-            <nav>
+
+
+            <!-- navbar-for wider screen -->
+            <nav class='wide-screen-nav'>
                 <a href="#home" class='brand-logo' title='Solo Software'><img src="./img/logo.png" alt="brand logo"></a>
                 <ul class='link-group'>
                     <li class='link'>
@@ -37,7 +40,7 @@
                             </span>
                             <span>Users</span>
                         </a>
-                    </li >
+                    </li>
                     <li class='link'>
                         <a class='link-text' href="#">
                             <span class='icon-group'>
@@ -59,10 +62,37 @@
                 </ul>
                 <form class='search-form' action="">
 
-                    <input type="text" id='search'> <label for="search"><i class='fas fa-search'></i></label>
+                    <input type="text" placeholder='Search' id='search'> <label for="search"><i
+                            class='fas fa-search'></i></label>
                 </form>
             </nav>
+
+
+
+            <!-- navbar-for smaller-screen -->
+            <nav class='smaller-screen-nav'>
+                    <a href="#" class='smaller-brand-logo' title='Solo Software'><img src="./img/logo.png"
+                            alt="brand logo"></a>
+                    
+
+                <!-- smaller-screen search form  -->
+                <form class='smaller-search-form' action="">
+                    <input type="text" placeholder='Search' class='smaller-search-bar' id='smaller-search'> <label class='smaller-icon' for="smaller-search"><i
+                            class='fas fa-search'></i></label>
+                </form>
+
+                <select class='smaller-nav-select' name="" id="">
+                    <option value="#home">Home</option>
+                    <option value="#users"> Users</option>
+                    <option value="#services">Services</option>
+                    <option value="#contact">Contact</option>
+                </select>
+
+            </nav>
         </header>
+        <main class='main-content'>
+
+        </main>
     </div>
 </body>
 

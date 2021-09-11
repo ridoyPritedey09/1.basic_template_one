@@ -1,0 +1,51 @@
+
+
+/* media-for navigation */
+@media screen and (max-width:900px){
+    nav.wide-screen-nav{
+        display: none;
+    }
+
+    nav.smaller-screen-nav{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 900.1px){
+    .wide-screen-nav{
+        display: flex;
+    }
+
+    nav.smaller-screen-nav{
+        display: none;
+    }
+}
+
+
+
+
+/* media for tinner and medium size */
+
+@media screen and (max-width: 750.1px){
+
+    .smaller-screen-nav{
+       flex-flow:column nowrap;
+      
+    }
+
+    a.smaller-brand-logo{
+        width: 50px;
+        margin-bottom: 1rem;
+        
+    }
+
+    a.smaller-brand-logo>img{
+        width: 100%;
+        
+    }
+    
+    form.smaller-search-form{
+        margin-bottom: 1rem;
+    }
+    
+}

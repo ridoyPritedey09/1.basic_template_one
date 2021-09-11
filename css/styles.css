@@ -1,3 +1,10 @@
+/* custom css import */
+@import url('smaller_screen.css');
+@import url('media.css');
+
+
+
+
 /* font-family */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
 
@@ -28,7 +35,7 @@ html{
 
 /* nav styles  */
 
-nav{
+.wide-screen-nav{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -130,3 +137,6 @@ label[for='search'] .fas{
     margin-left:0;
     padding-right: 5px;
 }
+
+
+
